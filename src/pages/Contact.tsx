@@ -85,7 +85,7 @@ export default function Contact() {
               Let's Discuss Your <span className="text-gradient">Growth</span>
             </h1>
             <p className="text-lg text-text-secondary leading-relaxed">
-              Tell me about your business, your challenges, and your goals. I'll respond within 1-2 business days with an initial assessment of how I can help.
+              Tell us about your business, your challenges, and your goals. The IFFI Media team will respond within 1-2 business days with an initial assessment of how we can help.
             </p>
           </div>
         </div>
@@ -394,9 +394,9 @@ export default function Contact() {
                   <h3 className="text-lg font-semibold text-text-primary mb-4">What to Expect</h3>
                   <ol className="space-y-3">
                     {[
-                      "I'll review your enquiry within 1-2 business days",
+                      "We'll review your enquiry within 1-2 business days",
                       "We'll schedule an initial discovery call",
-                      "I'll assess fit and outline a proposed approach",
+                      "We'll assess fit and outline a proposed approach",
                       "If aligned, we'll define scope, timeline, and investment",
                     ].map((step, i) => (
                       <li key={i} className="flex items-start gap-3 text-sm text-text-secondary">

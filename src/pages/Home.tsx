@@ -24,7 +24,7 @@ export default function Home() {
                 <span className="text-gradient">Measurable Growth.</span>
               </h1>
               <p className="text-lg sm:text-xl text-text-secondary max-w-xl mb-8 leading-relaxed">
-                I help businesses grow through organic search, paid advertising, and conversion-focused strategy. No vanity metrics — just measurable commercial outcomes.
+                IFFI Media helps businesses grow through organic search, paid advertising, and conversion-focused strategy. No vanity metrics — just measurable commercial outcomes.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-primary">
@@ -262,7 +262,7 @@ export default function Home() {
             Let's Build Your Growth Engine
           </h2>
           <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-            Whether you need SEO, paid media, conversion optimization, or a complete digital strategy — let's discuss how to turn your digital presence into measurable business growth.
+            Whether you need SEO, paid media, conversion optimization, or a complete digital strategy — IFFI Media will help you turn your digital presence into measurable business growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary">

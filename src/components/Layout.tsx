@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { siteConfig } from "../config";
+import { Logo } from "./Logo";
+import { WhatsAppChat } from "./WhatsAppChat";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,11 +39,9 @@ export function Header() {
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-acid rounded-sm flex items-center justify-center">
-              <span className="text-midnight font-bold text-sm">DG</span>
-            </div>
-            <span className="font-semibold text-text-primary hidden sm:block">
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <Logo size={36} />
+            <span className="font-semibold text-text-primary hidden sm:block tracking-tight">
               {siteConfig.brandName}
             </span>
           </Link>
@@ -120,16 +120,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-acid rounded-sm flex items-center justify-center">
-                <span className="text-midnight font-bold text-sm">DG</span>
-              </div>
-              <span className="font-semibold text-text-primary">
+            <Link to="/" className="flex items-center gap-2.5 mb-4">
+              <Logo size={36} />
+              <span className="font-semibold text-text-primary tracking-tight">
                 {siteConfig.brandName}
               </span>
             </Link>
             <p className="text-text-secondary text-sm max-w-md mb-6">
-              {siteConfig.brandTagline}. Specializing in SEO, Google Ads, Meta Ads, and conversion optimization for ambitious businesses.
+              {siteConfig.brandTagline}. IFFI Media specializes in SEO, Google Ads, Meta Ads, and conversion optimization for ambitious businesses.
             </p>
             <div className="flex gap-4">
               {siteConfig.social.linkedin && (
@@ -203,6 +201,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <ArrowUpRight size={16} />
         </Link>
       </div>
+      {/* WhatsApp Live Chat Widget */}
+      <WhatsAppChat />
     </div>
   );
 }

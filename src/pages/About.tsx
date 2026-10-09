@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Mail, MapPin, Award, Code, Briefcase, Lightbulb } from "lucide-react";
 import { siteConfig } from "../config";
+import { Logo } from "../components/Logo";
 
 export default function About() {
   return (
@@ -13,11 +14,10 @@ export default function About() {
             <div>
               <div className="section-label">About</div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Digital Marketer Focused on{" "}
-                <span className="text-gradient">Strategy & Performance</span>
+                We Are <span className="text-gradient">IFFI Media</span>
               </h1>
               <p className="text-lg text-text-secondary leading-relaxed mb-8">
-                I help businesses grow through data-driven digital marketing — combining strategic thinking with hands-on execution across SEO, paid media, and conversion optimization.
+                A digital growth agency focused on strategy and performance. We help businesses grow through data-driven marketing — combining strategic thinking with hands-on execution across SEO, paid media, and conversion optimization.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link to="/contact" className="btn-primary">
@@ -30,24 +30,17 @@ export default function About() {
               </div>
             </div>
 
-            {/* Profile photo placeholder */}
+            {/* Agency visual */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 rounded-xl bg-graphite border border-border overflow-hidden flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-acid/10 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-acid">
-                      {(siteConfig as any).personalName?.[0] || "?"}
-                    </span>
+                  <div className="w-24 h-24 mx-auto mb-4 flex items-center justify-center">
+                    <Logo size={80} />
                   </div>
                   <p className="text-sm text-text-muted">
-                    Professional photo<br />
-                    <span className="text-xs">[To be added]</span>
+                    IFFI Media<br />
+                    <span className="text-xs">Digital Growth Agency</span>
                   </p>
-                </div>
-                <div className="absolute top-3 right-3">
-                  <span className="text-[9px] font-mono text-text-muted bg-graphite-lighter px-1.5 py-0.5 rounded">
-                    PLACEHOLDER
-                  </span>
                 </div>
               </div>
             </div>
@@ -60,13 +53,13 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Background</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-text-secondary leading-relaxed">
                 <p>
-                  [Your professional background will be detailed here. This section is designed to communicate your experience, approach, and the value you bring to client engagements.]
+                  IFFI Media was built on a simple belief: digital marketing should be strategic, measurable, and directly connected to business outcomes. We don't chase trends — we build growth systems that compound over time.
                 </p>
                 <p>
-                  Edit the <code className="text-acid text-sm bg-graphite px-1.5 py-0.5 rounded">src/config.ts</code> file to add your real name, background, and professional details.
+                  Our approach combines deep expertise in organic search, paid media, and conversion optimization with a relentless focus on data and experimentation. Every recommendation we make is backed by evidence.
                 </p>
               </div>
             </div>
@@ -188,9 +181,9 @@ export default function About() {
       {/* Contact CTA */}
       <section className="py-16 lg:py-24 bg-graphite/30 border-t border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let's Work Together</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let's Grow Together</h2>
           <p className="text-text-secondary mb-8 max-w-2xl mx-auto">
-            If you're looking for a strategic digital marketing partner who focuses on measurable outcomes, let's have a conversation.
+            Ready to turn your digital presence into measurable business growth? Let's have a conversation about your goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary">

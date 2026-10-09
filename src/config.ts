@@ -3,26 +3,24 @@
 
 export const siteConfig = {
   // Brand Identity
-  brandName: "Digital Growth Lab",
+  brandName: "IFFI Media",
   brandTagline: "Turn Digital Attention Into Measurable Growth",
-  professionalTitle: "Digital Marketing Strategist",
-  // personalName: "[Your Name]", // TODO: Add your real name
+  professionalTitle: "Digital Marketing Agency",
+  domain: "https://www.iffimedia.com",
   
-  // Contact (edit with real details)
-  email: "hello@example.com", // TODO: Replace with real email
-  phone: null, // TODO: Add if available
-  whatsapp: null, // TODO: Add if available
-  location: null, // TODO: Add if available
+  // Contact
+  email: "hello@iffimedia.com",
+  phone: null,
+  // WhatsApp number with country code, no + or spaces (e.g., "971501234567")
+  whatsapp: "", // TODO: Add your WhatsApp number with country code
+  location: null,
   
-  // Social (edit with real URLs)
+  // Social
   social: {
-    linkedin: null, // TODO: Add LinkedIn URL
-    twitter: null, // TODO: Add Twitter/X URL
-    instagram: null, // TODO: Add Instagram URL
+    linkedin: null,
+    twitter: null,
+    instagram: null,
   },
-  
-  // Domain
-  domain: "https://example.com", // TODO: Replace with real domain
   
   // Primary CTA
   primaryCTA: {
@@ -36,9 +34,9 @@ export const siteConfig = {
 
   // SEO Defaults
   seo: {
-    defaultTitle: "Digital Growth Lab — SEO, Google Ads & Meta Ads Strategy",
-    defaultDescription: "Turn digital attention into measurable growth. Expert SEO, Google Ads, Meta Ads, and conversion optimization strategy for ambitious businesses.",
-    ogImage: null, // TODO: Add OG image URL
+    defaultTitle: "IFFI Media — SEO, Google Ads & Meta Ads Digital Growth Agency",
+    defaultDescription: "Turn digital attention into measurable growth. IFFI Media specializes in SEO, Google Ads, Meta Ads, and conversion optimization for ambitious businesses.",
+    ogImage: null,
   },
 
   // Services offered
@@ -55,16 +53,28 @@ export const siteConfig = {
 
   // Analytics & Tracking (disabled until real IDs provided)
   tracking: {
-    ga4Id: null, // Google Analytics 4 Measurement ID
-    gtmId: null, // Google Tag Manager ID
-    googleAdsId: null, // Google Ads Conversion ID
-    metaPixelId: null, // Meta Pixel ID
+    ga4Id: null,
+    gtmId: null,
+    googleAdsId: null,
+    metaPixelId: null,
   },
 
   // Form Configuration Status
   formConfig: {
     backendConfigured: false,
-    message: "Form submissions are not yet connected to a backend. Please use the email contact below.",
+    message: "Form submissions are not yet connected to a backend. Please use the email or WhatsApp contact.",
+  },
+
+  // Live Chat / WhatsApp Widget
+  liveChat: {
+    enabled: true,
+    welcomeMessage: "Hi! 👋 How can we help you grow your business today?",
+    quickReplies: [
+      "I need help with SEO",
+      "Tell me about Google Ads",
+      "I want to discuss Meta Ads",
+      "Let's talk about my project",
+    ],
   },
 };
 
