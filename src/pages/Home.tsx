@@ -23,8 +23,11 @@ export default function Home() {
                 Turn Digital Attention Into{" "}
                 <span className="text-gradient">Measurable Growth.</span>
               </h1>
-              <p className="text-lg sm:text-xl text-text-secondary max-w-xl mb-8 leading-relaxed">
-                IFFI Media helps businesses grow through organic search, paid advertising, and conversion-focused strategy. No vanity metrics — just measurable commercial outcomes.
+              <p className="text-lg sm:text-xl text-text-secondary max-w-xl mb-4 leading-relaxed">
+                IFFI Media is a results-driven digital marketing agency specializing in SEO, Google Ads, Meta Ads, and conversion optimization. We help businesses across UAE and worldwide achieve measurable growth through data-driven strategies.
+              </p>
+              <p className="text-base text-text-muted max-w-xl mb-8 leading-relaxed">
+                Our comprehensive digital marketing services include organic search optimization, paid advertising management, landing page conversion optimization, and advanced analytics. We focus on delivering ROI-focused solutions that generate qualified leads and drive revenue growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/contact" className="btn-primary">
@@ -304,6 +307,169 @@ export default function Home() {
         </div>
       </section>
 
+      {/* About IFFI Media Section */}
+      <section className="py-20 lg:py-32 bg-graphite/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="section-label">About IFFI Media</div>
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Your Trusted Digital Marketing Partner in UAE
+              </h2>
+              <p className="text-text-secondary mb-4 leading-relaxed">
+                IFFI Media is a premier digital marketing agency based in the UAE, specializing in search engine optimization, Google Ads management, Meta advertising, and conversion rate optimization. We serve businesses across Dubai, Abu Dhabi, Sharjah, and worldwide, helping them achieve sustainable growth through proven digital marketing strategies.
+              </p>
+              <p className="text-text-secondary mb-4 leading-relaxed">
+                Our team of certified digital marketing experts combines technical expertise with creative strategy to deliver measurable results. We understand that every business is unique, which is why we develop customized marketing solutions tailored to your specific goals, industry, and target audience.
+              </p>
+              <p className="text-text-secondary leading-relaxed">
+                With years of experience managing successful SEO campaigns, Google Ads accounts, and Meta advertising strategies, we've helped numerous businesses increase their online visibility, generate qualified leads, and maximize their return on investment. Our data-driven approach ensures that every marketing dollar is spent wisely and every strategy is backed by performance data.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="p-6 rounded-lg bg-graphite border border-border">
+                <h3 className="text-xl font-semibold text-text-primary mb-3">Our Mission</h3>
+                <p className="text-text-secondary leading-relaxed">
+                  To empower businesses with cutting-edge digital marketing solutions that drive measurable growth, increase online visibility, and maximize ROI through innovative strategies and data-driven decision making.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-graphite border border-border">
+                <h3 className="text-xl font-semibold text-text-primary mb-3">Our Vision</h3>
+                <p className="text-text-secondary leading-relaxed">
+                  To be the leading digital marketing agency in the UAE and beyond, recognized for delivering exceptional results, fostering long-term client partnerships, and setting new standards in digital marketing excellence.
+                </p>
+              </div>
+              <div className="p-6 rounded-lg bg-graphite border border-border">
+                <h3 className="text-xl font-semibold text-text-primary mb-3">Our Values</h3>
+                <p className="text-text-secondary leading-relaxed">
+                  Transparency, integrity, and results. We believe in honest communication, ethical marketing practices, and delivering measurable outcomes that directly impact your bottom line. Your success is our success.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive Services Overview */}
+      <section className="py-20 lg:py-32">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="section-label">Our Digital Marketing Services</div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Complete Digital Marketing Solutions
+            </h2>
+            <p className="text-text-secondary max-w-3xl mx-auto leading-relaxed">
+              IFFI Media offers comprehensive digital marketing services designed to help businesses succeed online. From search engine optimization to paid advertising, we provide end-to-end solutions that drive traffic, generate leads, and increase conversions. Our integrated approach ensures all your digital marketing efforts work together seamlessly.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-8 rounded-lg bg-graphite border border-border">
+              <Search size={32} className="text-acid mb-4" />
+              <h3 className="text-2xl font-bold text-text-primary mb-3">Search Engine Optimization (SEO)</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Our SEO services help your business rank higher in search engine results, driving organic traffic and increasing visibility. We implement proven SEO strategies including technical optimization, on-page SEO, content marketing, and link building to improve your search rankings for relevant keywords.
+              </p>
+              <ul className="space-y-2 text-sm text-text-secondary">
+                <li>• Technical SEO audits and optimization</li>
+                <li>• Keyword research and strategy development</li>
+                <li>• On-page optimization and content creation</li>
+                <li>• Link building and authority development</li>
+                <li>• Local SEO for UAE businesses</li>
+              </ul>
+            </div>
+
+            <div className="p-8 rounded-lg bg-graphite border border-border">
+              <Target size={32} className="text-acid mb-4" />
+              <h3 className="text-2xl font-bold text-text-primary mb-3">Google Ads Management</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Maximize your ROI with our expert Google Ads management services. We create and optimize paid search campaigns that target your ideal customers at the right time with the right message. Our certified Google Ads specialists manage campaigns of all sizes, from small business advertising to enterprise-level accounts.
+              </p>
+              <ul className="space-y-2 text-sm text-text-secondary">
+                <li>• Google Search Ads campaign management</li>
+                <li>• Google Shopping Ads for e-commerce</li>
+                <li>• Display Ads and remarketing campaigns</li>
+                <li>• Performance Max campaign optimization</li>
+                <li>• Conversion tracking and analytics setup</li>
+              </ul>
+            </div>
+
+            <div className="p-8 rounded-lg bg-graphite border border-border">
+              <Users size={32} className="text-acid mb-4" />
+              <h3 className="text-2xl font-bold text-text-primary mb-3">Meta Ads (Facebook & Instagram)</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Reach your target audience with precision using our Meta advertising services. We create compelling Facebook and Instagram ad campaigns that build brand awareness, generate leads, and drive sales. Our team specializes in audience targeting, creative development, and campaign optimization for maximum performance.
+              </p>
+              <ul className="space-y-2 text-sm text-text-secondary">
+                <li>• Facebook Ads campaign creation and management</li>
+                <li>• Instagram advertising and story ads</li>
+                <li>• Audience research and targeting strategy</li>
+                <li>• Creative ad design and copywriting</li>
+                <li>• Retargeting and lookalike audience campaigns</li>
+              </ul>
+            </div>
+
+            <div className="p-8 rounded-lg bg-graphite border border-border">
+              <TrendingUp size={32} className="text-acid mb-4" />
+              <h3 className="text-2xl font-bold text-text-primary mb-3">Conversion Rate Optimization (CRO)</h3>
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Turn more visitors into customers with our conversion optimization services. We analyze your website performance, identify conversion barriers, and implement data-driven improvements to increase your conversion rates. Our CRO strategies help you get more value from your existing traffic.
+              </p>
+              <ul className="space-y-2 text-sm text-text-secondary">
+                <li>• Landing page optimization and design</li>
+                <li>• A/B testing and multivariate testing</li>
+                <li>• User experience (UX) improvements</li>
+                <li>• Call-to-action optimization</li>
+                <li>• Form optimization and checkout flow</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link to="/services" className="btn-primary">
+              View All Services
+              <ArrowUpRight size={18} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries We Serve */}
+      <section className="py-20 lg:py-32 bg-graphite/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="section-label">Industries We Serve</div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              Digital Marketing Across Industries
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto">
+              IFFI Media has extensive experience delivering digital marketing solutions across diverse industries. Our team understands the unique challenges and opportunities in each sector.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              "E-commerce & Retail",
+              "Real Estate",
+              "Healthcare & Medical",
+              "Education & Training",
+              "Hospitality & Tourism",
+              "Finance & Banking",
+              "Technology & SaaS",
+              "Professional Services",
+              "Restaurant & Food",
+              "Fitness & Wellness",
+              "Legal Services",
+              "Manufacturing"
+            ].map((industry) => (
+              <div key={industry} className="p-4 rounded-lg bg-graphite border border-border text-center hover:border-acid transition-colors">
+                <p className="text-sm font-medium text-text-primary">{industry}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA */}
       <section className="py-20 lg:py-32 bg-graphite/50 border-t border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -312,7 +478,7 @@ export default function Home() {
             Let's Build Your Growth Engine
           </h2>
           <p className="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
-            Whether you need SEO, paid media, conversion optimization, or a complete digital strategy — IFFI Media will help you turn your digital presence into measurable business growth.
+            Whether you need SEO, paid media, conversion optimization, or a complete digital strategy — IFFI Media will help you turn your digital presence into measurable business growth. Contact us today for a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact" className="btn-primary">
