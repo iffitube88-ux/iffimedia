@@ -9,23 +9,42 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "./components/ScrollToTop";
 
+// Admin imports
+import AdminLogin from "./admin/Login";
+import AdminLayout from "./admin/Layout";
+import AdminDashboard from "./admin/Dashboard";
+import AdminClients from "./admin/Clients";
+import AdminMeetings from "./admin/Meetings";
+import AdminSettings from "./admin/Settings";
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/work" element={<CaseStudiesArchive />} />
-          <Route path="/work/:id" element={<CaseStudyDetail />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/insights" element={<BlogArchive />} />
-          <Route path="/insights/:slug" element={<BlogPost />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
+      <Routes>
+        {/* Public Routes */}
+        <Route path="/" element={<Layout><Home /></Layout>} />
+        <Route path="/services" element={<Layout><Services /></Layout>} />
+        <Route path="/work" element={<Layout><CaseStudiesArchive /></Layout>} />
+        <Route path="/work/:id" element={<Layout><CaseStudyDetail /></Layout>} />
+        <Route path="/about" element={<Layout><About /></Layout>} />
+        <Route path="/insights" element={<Layout><BlogArchive /></Layout>} />
+        <Route path="/insights/:slug" element={<Layout><BlogPost /></Layout>} />
+        <Route path="/contact" element={<Layout><Contact /></Layout>} />
+        
+        {/* Admin Routes */}
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminLayout />}>
+          <Route index element={<AdminDashboard />} />
+          <Route path="dashboard" element={<AdminDashboard />} />
+          <Route path="clients" element={<AdminClients />} />
+          <Route path="meetings" element={<AdminMeetings />} />
+          <Route path="settings" element={<AdminSettings />} />
+        </Route>
+        
+        {/* 404 */}
+        <Route path="*" element={<Layout><NotFound /></Layout>} />
+      </Routes>
     </BrowserRouter>
   );
 }
