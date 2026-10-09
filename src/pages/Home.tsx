@@ -234,22 +234,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Why Choose IFFI Media */}
       <section className="py-20 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="section-label">Testimonials</div>
-            <h2 className="text-3xl sm:text-4xl font-bold">What Clients Say</h2>
+          <div className="text-center mb-16">
+            <div className="section-label">Why Choose Us</div>
+            <h2 className="text-3xl sm:text-4xl font-bold mb-4">
+              The IFFI Media Difference
+            </h2>
+            <p className="text-text-secondary max-w-2xl mx-auto">
+              We don't just run campaigns — we build growth systems that deliver measurable, sustainable results.
+            </p>
           </div>
-          <div className="max-w-2xl mx-auto text-center">
-            <div className="p-8 rounded-lg border border-border bg-graphite/30">
-              <p className="text-text-secondary italic mb-4">
-                "Testimonials will be added here when real client feedback is available. This section is reserved for genuine client experiences only."
-              </p>
-              <p className="text-sm text-text-muted">
-                — Configuration pending
-              </p>
-            </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              {
+                icon: "🎯",
+                title: "Strategy-First Approach",
+                description: "Every tactic serves a clear business objective. We start with your goals, then build the roadmap to get there."
+              },
+              {
+                icon: "📊",
+                title: "Data-Driven Decisions",
+                description: "No guesswork. Every recommendation is backed by data, testing, and proven performance metrics."
+              },
+              {
+                icon: "🚀",
+                title: "Full-Funnel Expertise",
+                description: "From awareness to conversion, we optimize every stage of your customer journey for maximum impact."
+              },
+              {
+                icon: "🔍",
+                title: "Transparent Reporting",
+                description: "Clear, honest reporting that connects marketing activity directly to your business outcomes."
+              },
+              {
+                icon: "⚡",
+                title: "Rapid Execution",
+                description: "We move fast without sacrificing quality. Launch, learn, optimize — continuously."
+              },
+              {
+                icon: "🤝",
+                title: "True Partnership",
+                description: "We're an extension of your team, not just a vendor. Your success is our success."
+              }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="hover-card p-6 rounded-lg bg-graphite border border-border group"
+              >
+                <div className="text-3xl mb-4">{item.icon}</div>
+                <h3 className="text-lg font-semibold text-text-primary mb-2 group-hover:text-acid transition-colors">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-text-secondary leading-relaxed">
+                  {item.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link to="/about" className="btn-secondary">
+              Learn More About Our Approach
+              <ArrowUpRight size={16} />
+            </Link>
           </div>
         </div>
       </section>
