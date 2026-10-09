@@ -11,9 +11,9 @@ export const siteConfig = {
   // Contact
   email: "hello@iffimedia.com",
   phone: null,
-  // WhatsApp number with country code, no + or spaces (e.g., "971501234567")
-  whatsapp: "", // TODO: Add your WhatsApp number with country code
-  location: null,
+  // WhatsApp number with country code, no + or spaces
+  whatsapp: "971507091227",
+  location: "UAE",
   
   // Social
   social: {
